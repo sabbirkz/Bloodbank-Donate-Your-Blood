@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="author" content="Kazi Zafar Ahmmed Sabbir">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/fav-icon.jpg" type="image/jpg" sizes="16x16">
+    <title>Donate Your Blood | BloodBank</title>
+  </head>
+  <body>
+    <script>
+      window.alert("Welcome To BloodBank.Com . For Better View, Open in Desktop Mode");
+    </script>
+    <header>
+      <div class="cover-image">
+        <img src="image/cover3.gif" alt="project-cover" width="100%" height="100%" class="project-cover">
+        <a href="#nav-bar" class="click-a">
+          <p class="click-btn">
+            Click Here 
+          </p>
+        </a>
+      </div>
+    </header>
+    
+  <!--Navbar Start------->
+   <nav id="nav-bar">
+     <label class="logo">BloodBank</label>
+     <ul>
+       <li><a href="#nav-bar">Home</a></li> 
+       <li><a href="#why-section">Why donate Blood</a></li>
+       <li><a href="#who-can">Who Can Give Blood</a></li>
+       <li><a href="#refer-friend">Refer A Friend</a></li>
+       <li><a href="#contact">Countact Us</a></li>
+      <li><a href="#register">Register</a></li>
+       <li>
+        <a href="#" onclick="document.getElementById('login-popup').style.display='block'" >login</a>
+       </li>
+     </ul>
+   </nav>
+  <!------Navbar End------->
+
+  
+
+  <!------ Popup Login Start------->
+  <div id="login-popup" class="login-popup">
+  
+    <form class="login-popup-content" action="/action_page.php">
+  
+      <div class="popup-img">
+        <span onclick="document.getElementById('login-popup').style.display='none'" class="close"
+          title="Close PopUp">&times;</span>
+        <img src="image/popup-pic.png" class="popup-img-size">
+        <h1 style="text-align:center; color: red;">Blood Donor login</h1>
+      </div>
+  
+      <div class="container">
+        <input type="text" placeholder="Enter Username">
+        <input type="password" placeholder="Enter Password">
+        <button type="submit">Login</button>
+      </div>
+  
+    </form>
+  
+  </div>
+  <script>
+    var login-popup = document.getElementById('login-popup');
+    window.onclick = function (event) {
+      if (event.target == login-popup) {
+        login-popup.style.display = "none";
+      }
+    }
+  </script>
+<!------ Popup Login Start------->
+
+  
+
+  <!----Main Section Start------->
+    <div class="left-div" id="home">
+      <div class="find-donor">
+        <p>Find A Donor</p>
+        <form>
+          <select id="state" class="select">
+            <option value="state">Select  State</option>
+            <option value="">Andhra Pradesh</option>
+            <option value="">Assam</option>
+            <option value="">Goa</option>
+            <option value="">Punjab</option>
+            <option value="">Rajasthan</option>
+            <option value="">Sikkim</option>
+          </select>
+          
+          <br>
+          
+          <select id="City" class="select">
+            <option value="state">Select City</option>
+            <option value="">City 1</option>
+            <option value="">City 2</option>
+            <option value="">City 3</option>
+            <option value="">City 4</option>
+            <option value="">City 5</option>
+            <option value="">City 6</option>
+          </select>
+          
+          <br>
+          
+          <select id="Area" class="select">
+            <option value="state">Select Area</option>
+            <option value="">Area 1</option>
+            <option value="">Area 2</option>
+            <option value="">Area 3</option>
+            <option value="">Area 4</option>
+            <option value="">Area 5</option>
+            <option value="">Area 6</option>
+          </select>
+          <br>
+          
+          <select id="group" class="select">
+            <option value="group">Select group</option>
+            <option value="">O-</option>
+            <option value="">O+</option>
+            <option value="">A-</option>
+            <option value="">A+</option>
+            <option value="">B-</option>
+            <option value="">B+</option>
+            <option value="">AB-</option>
+            <option value="">AB+</option>
+          </select>
+          <br>
+          <input type="submit" value="Search">
+        </form>   
+      </div>
+    </div>
+
+
+    <div class="right-div">
+      <video width="600" controls autoplay>
+        <source src="video/v2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="where">
+      <div class="search-bar">
+        <input type="text" placeholder="Search Here Where Would you like To Donate Blood">
+      </div>
+      <div class="search">
+        <a href="https://sabbirahmmed.com" target="_blank">
+          <p> Search </p>
+        </a>
+      </div>
+    </div>
+
+    <div class="donation-process">
+      <img src="image/process2.jpg" alt="donation-process" width="100%">
+    </div>
+
+
+
+    <!---------Main Section End------->
+
+    <div id="why-section">
+      <h1>Why Donate Blood</h1>
+      <div class="why-details">
+        <p>
+          <b>*QUSTION :-</b> 
+          Why should I donate blood?
+          <br><br>
+          <b>*ANSWER:-</b>
+          Safe blood saves lives and improves health. Blood transfusion is needed for:
+          <br><br>
+          1. Women with complications of pregnancy, such as ectopic pregnancies and haemorrhage before, during or after childbirth
+          <br>
+          2. Children with severe anaemia often resulting from malaria or malnutrition
+          <br>
+          3. People with severe trauma following man-made and natural disasters
+          <br> 
+          And many complex medical and surgical procedures and cancer patients.
+          <br><br>
+          It is also needed for regular transfusions for people with conditions such as thalassaemia and sickle cell disease and
+          is used to make products such as clotting factors for people with haemophilia.
+          <br>
+          There is a constant need for regular blood supply because blood can be stored for only a limited time before use.
+          Regular blood donations by a sufficient number of healthy people are needed to ensure that safe blood will be available
+          whenever and wherever it is needed.
+        </p>
+      </div>
+    </div>
+
+    <div id="who-can">
+      <h1>Who Can Give Blood</h1>
+      <div class="who-can-details">
+        <br>
+        <br>
+          <table>
+            <tr>
+              <th>If Your Blood Type is:</th>
+              <th>You Can Give to:</th>
+              <th>You Can Receive from:</th>
+            </tr>
+            <tr>
+              <td>O Positive</td>
+              <td>O+, A+, B+, AB+</td>
+              <td>O+, O-</td>
+            </tr>
+            <tr>
+              <td>A Positive</td>
+              <td>A+, AB+</td>
+              <td>A+, A-, O+, O-</td>
+            </tr>
+            <tr>
+              <td>B Positive</td>
+              <td>B+, AB+</td>
+              <td>B+, B-, O+, O-</td>
+            </tr>
+            <tr>
+              <td>AB Positive</td>
+              <td>AB+ Only</td>
+              <td>All blood types</td>
+            </tr>
+            <tr>
+              <td>O Negative</td>
+              <td>All blood types</td>
+              <td>O- only</td>
+            </tr>
+            <tr>
+              <td>A Negative</td>
+              <td>A-, A+, AB-, AB+</td>
+              <td>A-, O-</td>
+            </tr>
+            <tr>
+              <td>B Negative</td>
+              <td>B-, B+, AB-, AB+</td>
+              <td>B-, O-</td>
+            </tr>
+            <tr>
+              <td>AB Negative</td>
+              <td>AB-, AB+</td>
+              <td>AB-, A-, B-, O-</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+
+    <div id="refer-friend">
+      
+      <div class="refer-friend-details">
+        <img src="image/refer2.jpg" alt="refer-friend">
+    
+      </div>
+    </div>
+
+    <div id="contact">
+      <h1>Contact With Us</h1>
+      <div class="contact-details">
+
+        <div class="login">
+          <input type="text" name="" placeholder="Your Name (required)" class="input" id="your-name">
+          <input type="text" name="" placeholder="Your Email (required)" class="input">
+        </div>
+
+        <div class="subject">
+          <input type="text" name="" placeholder="Subject" class="input">
+        </div>
+
+        <div class="msg">
+          <textarea class="area" placeholder="Leave Your Message"></textarea>
+        </div>
+
+        <div class="submit">
+            <a href="https://sabbirahmmed.com" target="_blank" class="btn">Send Message</a>
+        </div>
+
+      </div>
+    </div>
+    <div id="register">
+      <h1>Register Here To Donate Blood</h1>
+      <div class="register-details">
+        
+        <div class="reg-form">
+
+          <input type="text" placeholder="Your Name (required)" class="input">
+          <input type="email" placeholder="Your Email (required)" class="email">
+          <input type="password" placeholder="Password" class="input">
+          <input type="text" placeholder="Your Birth Date  (MM/DD/YYYY)" onfocus="(this.type='date')" class="input">
+               <select class="blood-group">
+                 <option value="blood-group">Select Blood Group</option>
+                 <option value="">O +</option>
+                 <option value="">A +</option>
+                 <option value="">B +</option>
+                 <option value="">AB +</option>
+                 <option value="">AB -</option>
+                 <option value="">O -</option>
+                 <option value="">A -</option>
+                 <option value="">B -</option>
+               </select>
+
+              <select class="gender" id="gender">
+                <option value="gender">Select Gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>               
+        </div>
+
+        <div class="reg-btn">
+          <a href="https://sabbirahmmed.com" target="_blank" class="submit">register</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="fixed-btn">
+      <a href="https://sabbirahmmed.com" target="_blank">
+      <p>
+       feedback * 
+      </p>
+      </a>
+    </div>
+
+  </body>
+</html>

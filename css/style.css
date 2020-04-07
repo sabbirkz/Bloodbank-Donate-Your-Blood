@@ -1,0 +1,580 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(font/montserrat.otf);
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: montserrat;
+}
+
+/*---------- Cover Start----------*/
+  
+header{
+  text-align: center;
+}
+.cover-image .click-btn{
+  position: absolute;
+  width: 10%;
+  top: 74%;
+  left: 43%;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.click-btn:hover {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+/*---------- Cover End----------*/
+
+
+/*------------- Navbar Start --------------- */
+nav{
+  background-color: red;
+  height: 70px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+label.logo{
+  color: white;
+  font-size: 40px;
+  font-weight: 80;
+  line-height: 80px;
+  padding-top: 0;
+  padding-left:  100px;
+  padding-right: 0;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 150px;
+
+}
+nav ul li{
+  display: inline;
+  line-height: 70px;
+  margin-left: 15px;
+  
+}
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 7px;
+  border-radius: 3px;
+  
+}
+a:hover{
+  background: white;
+  color: red;
+}
+/*------------- Navbar End --------------- */
+
+/*------------- Pop Up login Start --------------- */
+
+/* The login-popup (background) */
+.login-popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.login-popup-content {
+  background-color: #fefefe;
+  margin: 4% auto 15% auto;
+  border: 9px solid red;
+  width: 30%;
+  padding-bottom: 30px;
+}
+
+.popup-img {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.popup-img-size{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: red font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+input[type=text],
+input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 26px;
+  display: inline-block;
+  border: 3px solid red;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 26px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.animate {
+  animation: zoom 0.6s
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+
+/*------------- Pop Up login End --------------- */
+
+
+/*------------- Main Section Start --------------- */
+
+.left-div{
+  background-color: #EEEEEE;
+  float: left;
+  width: 40%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  padding:2%;
+}
+.find-donor{
+  margin-left: 38%;
+  padding: 3%;
+  max-width: 300px;
+  border-radius: 5px;
+  background-color: red;
+}
+.find-donor p{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.select{
+  width: 100%;
+  margin-left: 2px;
+  padding: 10px;
+}
+input[type=submit]{
+  width: 100%;
+  padding: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+input[type=submit]:hover {
+  background-color: red;
+  color: white;
+}
+
+.right-div{
+  background-color: #EEEEEE;
+  display: inline-block;
+  width: 60%;
+  height: 400px;
+  color: red;
+  text-align: center;
+}
+.right-div video{
+  padding-top: 5%;
+}
+
+
+.where{
+  background-color: #EEEEEE;
+  width: 40%;
+  height: 300px;
+  float: left;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+.search-bar{
+  margin-top: 10%;
+  width: 90%;
+  margin-left: 3%;
+}
+.search{
+  
+  width: 20%;
+  margin-left: 40%;
+  
+}
+.search p{
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  background-color: red;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.search p:hover{
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+
+.donation-process{
+  background-color: #EEEEEE;
+  display: inline-block;
+  width: 60%;
+  height: 300px;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+.donation-process img{
+  margin-top: 2%;
+}
+
+
+/*------------- Main Section  End --------------- */
+
+/*------------- Why Donate Blood Start --------------- */
+#why-section{
+  text-align: center;  
+  display: inline-block;
+  width: 100%;
+  height: 770px;
+}
+
+#why-section h1{
+  margin-top: 7%;
+  color: red;
+}
+.why-details{
+  background-color: red;
+  align-content: center;
+  width: 80%;
+  height: 500px;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+}
+.why-details p{
+  padding: 4%;
+  text-align: justify;
+  color: white;
+  font-size: 120%;
+}
+/*------------- Why Donate Blood  End --------------- */
+
+
+/*------------- Who Can Donate Donate Blood  start --------------- */
+#who-can {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 770px;
+}
+#who-can h1 {
+  margin-top: 7%;
+  color: red;
+}
+.who-can-details {
+  background-color: red;
+  align-content: center;
+  width: 80%;
+  height: 500px;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+}
+.who-can-details table{
+  width: 80%;
+  margin-left: 10%;
+  height: 400px;
+}
+tr{
+  background-color:white;
+}
+
+
+/*------------- Who Can Donate Donate Blood  End --------------- */
+
+
+/*------------- Refer A Friend Start --------------- */
+#refer-friend {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 770px;
+  background-color: white;
+}
+
+
+/*------------- Refer A Friend  End --------------- */
+
+
+/*------------- Contact Us Start--------------- */
+#contact {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 770px;
+  background-color: white;
+}
+#contact h1 {
+  margin-top: 7%;
+  color: red;
+}
+.contact-details {
+  background-color: #EEEEEE;
+  border: 2px solid red;
+  align-content: center;
+  width: 70%;
+  height: 500px;
+  margin-top: 2%;
+  margin-left: 15%;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+}
+
+.input, .msg .area{
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid white;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s;
+}
+ #your-name{
+   margin-left: 10%;
+ }
+.login .input{
+  margin-top: 2%;
+  width: 38%;
+  float: left;
+  margin-left: 4%;
+}
+.subject{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+.msg .area{
+  height: 200px;
+}
+.input:focus, .msg .area:focus{
+  border: 2px solid red;
+}
+
+.submit{
+  width: 100%; 
+  text-align: center;
+  padding: 20px;
+}
+.submit .btn{
+  background: rgb(255, 255, 255);
+  color: red;
+  padding: 12px 8px;
+  font-size: 19px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+   padding-left: 100px;
+   padding-right: 100px;
+}
+.submit .btn:hover{
+  background-color: red;
+  color: white;
+}
+
+
+/*------------- Contact Us  End --------------- */
+
+
+/*------------- Register  Start --------------- */
+#register {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 770px;
+  background-color: white;
+}
+#register h1 {
+  margin-top: 7%;
+  color: red;
+}
+
+.register-details{
+  background-color: #EEEEEE;
+  border: 2px solid red;
+  align-content: center;
+  width: 70%;
+  height: 520px;
+  margin-top: 2%;
+  margin-left: 15%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.reg-form{
+  margin: 2%;
+}
+.reg-form .input .blood-group{
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid red;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s;
+}
+.email{
+  width: 90%;
+  padding: 15px;
+  border: 2px solid red;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.blood-group{
+  margin-left: 10%;
+}
+select{
+  width: 38%;
+  float: left;
+  margin-left: 10%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid white;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s;
+  width: 38%;
+  float: left;
+  margin-left: 4%;
+}
+
+.reg-btn{
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  margin-top: 7%;
+}
+.reg-btn .submit{
+   background: rgb(255, 255, 255);
+   color: red;
+   padding: 12px 8px;
+   font-size: 19px;
+   text-transform: uppercase;
+   cursor: pointer;
+   border-radius: 5px;
+   padding-left: 100px;
+   padding-right: 100px;
+}
+
+.reg-btn .submit:hover{
+  background-color: red;
+  color: white;
+}
+/*------------- Register  End --------------- */
+
+/*------------- Feedback  End --------------- */
+
+.fixed-btn {
+  position: fixed;
+  bottom: 4%;
+  left: 3%;
+  background: rgb(247, 73, 73);
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.fixed-btn p {
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: 900;
+  color: #fff;
+}
+
+.fixed-btn:active {
+  box-shadow: 0 0;
+}
+.fixed-btn p:hover{
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+
+
+/*------------- Feedback  End --------------- */
